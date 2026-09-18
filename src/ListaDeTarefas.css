@@ -1,0 +1,36 @@
+.lista-container {
+  width: 100%;
+}
+
+/* CABEÇALHO DA LISTA */
+
+.lista-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 24px 24px 20px;
+
+  border-bottom: 1px solid #eeeeef;
+}
+
+.lista-titulo h2 {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 650;
+
+  color: #18181b;
+}
+
+.lista-titulo span {
+  font-size: 11px;
+  color: #a0a0a5;
+}
+
+/* ÁREA DAS TAREFAS */
+
+.lista {
+  width: 100%;
+  padding: 12px 0;
+}

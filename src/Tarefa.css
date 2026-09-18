@@ -1,0 +1,89 @@
+.tarefa {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin: 0 20px 8px;
+  padding: 18px 20px;
+
+  background: #fafafa;
+
+  border: 1px solid #eeeeef;
+  border-radius: 12px;
+
+  transition: all 0.2s ease;
+}
+
+.tarefa:hover {
+  background: #f5f5f5;
+  transform: translateY(-1px);
+}
+
+.tarefa:last-child {
+  margin-bottom: 0;
+}
+
+.tarefa input {
+  appearance: none;
+
+  width: 20px;
+  height: 20px;
+
+  border: 1.5px solid #c7c7cc;
+  border-radius: 6px;
+
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.tarefa input:checked {
+  background: #18181b;
+  border-color: #18181b;
+}
+
+.tarefa input:checked::after {
+  content: "";
+
+  position: absolute;
+
+  width: 5px;
+  height: 9px;
+
+  border: solid white;
+  border-width: 0 2px 2px 0;
+
+  transform: rotate(45deg);
+
+  left: 6px;
+  top: 3px;
+}
+
+.nome-tarefa {
+  flex: 1;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #27272a;
+}
+
+.tarefa.concluida .nome-tarefa {
+  color: #a1a1a6;
+  text-decoration: line-through;
+}
+
+.status {
+  padding: 6px 10px;
+
+  background: #f1f1f2;
+  color: #71717a;
+
+  border-radius: 20px;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
